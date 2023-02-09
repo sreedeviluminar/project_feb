@@ -1,3 +1,5 @@
+import 'package:test/expect.dart';
+
 void main(){
 
   var a = 13;
@@ -75,4 +77,29 @@ print("Logical operators");
 
    var largest = a > b ? "a = $a is larger" :" b = $b is larger";
    print(largest);
+
+   var n1 = 10, n2 = 20, n3 = 30;
+
+   var large = n1 > n2  ? (n1 > n3 ? '$n1 is greater' : '$n3 is greater') : (n2 > n3 ?'$n2 is greater' : '$n3 is greater');
+   print(large);
+
+   print("bitwise operator");//& | ^
+   int n = 10;   //0000 1010
+   int m = 15;   //0000 1111
+  ///     n & m  = 0000 1010  = 10
+  ///     n | m  = 0000 1111  = 15
+  ///     n ^ m  = 0000 0101  = 5
+  print(n & m);
+  print(n | m);
+  print(n ^ m);
+
+  print("shift operator"); //>>  <<
+
+  print(n >> 2);/// 0000 1010 >> 2 -> 0000 0010 = 2
+  print(n << 2);/// 0000 1010 << 2 -> 0010 1000 =40
+
+  print("null aware");
+  String? name;
+  var result1 = name?.length ?? 'name may or may not be null';
+  print(result1);
 }
