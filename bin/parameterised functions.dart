@@ -4,7 +4,6 @@ void main() {
     func3(9876543431, name: "Anuja");
     func3(987776400, name: "Banu",age: 20,course: "Python");
 }
-
 /// optional positional parameterised function
 void func1 (int x, [String? a, int? b , double? c]) {
   print('x = $x');
@@ -24,5 +23,4 @@ void func3(int phone, {required String name , int? age  ,String course = "Flutte
    print('phone   :  $phone');
    print('course  :  $course');
    print('age     :  $age');
-
 }
