@@ -1,3 +1,5 @@
+import 'this demo.dart';
+
 class A{
 
   /// constructor => similar to functions but name should same as class name without return_type
@@ -34,4 +36,6 @@ void main(){
   var obj4 = A.two(5);
   var obj5 = A.three(3,y: 8);
   //displayyyy();
+  var obj = ABC("",7);
+  print(obj.name);
 }
