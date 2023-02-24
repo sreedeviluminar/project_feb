@@ -14,4 +14,8 @@ void main(){
   set2.add(2);
   set2.addAll({10,20,30});
   print(set2);
+
+  print(set1.union(set2));
+  print(set1.intersection(set2));
+  print(set2.difference(set1));
 }
